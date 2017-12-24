@@ -1,0 +1,11 @@
+CACHE MANIFEST
+index.html
+assets/code/script.js
+assets/code/style.css
+assets/sound/bad.opus
+assets/sound/good.opus
+assets/sound/neutral.opus
+assets/sound/roll.opus
+
+NETWORK:
+*

@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded', e => {
 	drawDog()
 	findDog()
 
-	if (!isMobile.any) { changeSoundVolume(.4) }
+	if (isMobile && !isMobile.any) { changeSoundVolume(.4) }
 
 	Array.from(document.querySelectorAll('a[href^="http"]')).forEach(link => {
 		link.setAttribute('target', '_blank')
