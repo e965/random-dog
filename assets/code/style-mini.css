@@ -1,0 +1,35 @@
+/*
+ * just for lulz
+ */
+
+.mini {
+	font-size: 12px;
+}
+
+.mini header {
+	margin: 20px 0;
+}
+
+.mini main {
+	margin-top: 60px;
+}
+
+.mini .dog {
+	width: 200px;
+}
+
+.mini .text {
+	margin-top: 60px;
+}
+
+.mini .result {
+	margin-top: 20px;
+}
+
+.mini .actionBtn {
+	margin-top: 10px;
+}
+
+.mini footer {
+	margin: 20px 0;
+}
