@@ -64,7 +64,7 @@ var findDog = () => {
 var rollDog = () => {
 	let some = prompt('Что нужно оценить?', '')
 
-	if (!some) { textBox.textContent = 'Попробуй ещё!'; return }
+	if (!some) { textDog('Собака не поняла, что от неё нужно. Попробуй ещё раз!'); return }
 
 	dog.dataset.state = 'roll'
 	textDog('Уличная собака рандомизирует...')
@@ -72,11 +72,11 @@ var rollDog = () => {
 	delete actionButton.dataset.state
 
 	sounds.roll.play()
-	sounds.roll.onended = function() {
+	sounds.roll.onended = () => {
 		random(1, 10).then(result => {
 			result = Number(result)
 
-			setTimeout(function() {
+			setTimeout(() => {
 				switch (result) {
 					case 1:
 						textDog(`Уличная собака блеванула, как только увидела ${some}! Просто омерзительно!`); break
